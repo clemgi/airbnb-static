@@ -1,0 +1,20 @@
+<div class="title text-center">
+<h1>The dream team </h1>
+<ul class="list-inline text-center">
+  <% ["sigrid", "george", "clem"].each do |member| %>
+    <li>
+      <h3><%= member.capitalize %></h3>
+      <%= image_tag "#{member}.png", class: "img-circle" %>
+    </li>
+  <% end %>
+</ul>
+<h3 class="padded">
+    <%= link_to "contact@lemonie.com", "mailto:contact@lemonie.com", class: "fa fa-envelope" %>
+  </h3>
+</div>
+
+
+<!-- => <a href="/press.html" class="btn btn-primary">Press</a> -->
+
+ <!-- <a href="mailto:contact@lemonie.com">
+      <i class="fa fa-envelope"></i> contact@lemonie.com -->
